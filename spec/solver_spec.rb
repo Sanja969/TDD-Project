@@ -42,7 +42,7 @@ describe Solver do
       expect(@solver.fizzbuzz(15)).to eql 'fizzbuzz'
     end
     it 'when argument is not divisible by 3 or 5' do
-      expect(@solver.fizzbuzz(15)).to eql '15'
+      expect(@solver.fizzbuzz(7)).to eql '7'
     end
   end
 end
