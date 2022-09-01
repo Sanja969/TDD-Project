@@ -1,4 +1,5 @@
 require 'yaml'
+require_relative '../solver'
 
 describe Solver do
   before :all do
@@ -20,12 +21,12 @@ describe Solver do
       expect(@solver.factorial(1)).to eql 1
     end
     it 'throw RangeError exceptioon for factorial of negative value' do
-      expect(@solver.factorial(-6)).to raise_exception RangeError
+      expect { lambda @solver.factorial(-6) }.to raise_exception RangeError
     end
   end
 
   describe '#reverse' do
-    it 'returns 720 for factorial of 6' do
+    it 'for given argument - word return - drow' do
       expect(@solver.reverse('word')).to eql 'drow'
     end
   end
