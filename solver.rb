@@ -1,5 +1,3 @@
-# rubocop:disable Style/Documentation
-
 class Solver
   def factorial(number)
     raise RangeError, "You can't put negative value as argument when calling factorial method" if number.negative?

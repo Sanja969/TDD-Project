@@ -1,5 +1,5 @@
-require 'yaml'
 require_relative '../solver'
+require 'yaml'
 
 describe Solver do
   before :all do
